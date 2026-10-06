@@ -1,0 +1,25 @@
+¡Buenas! 🙌 Te paso el kit con todos los skills que uso con Claude para armar páginas web de nivel premium (la de 1% Fitness salió así).
+
+*Qué trae:*
+• *scroll-craft* → la web con scroll cinematográfico y el inicio con profundidad, en capas
+• *human-speak* → los textos suenan a vos, no a IA
+• *grill-me* → Claude te entrevista antes de diseñar
+• *visualizations* e *infographic-builder* → gráficos e infografías con tu marca
+• *HyperFrames* → videos y animaciones para la web
+• *web-premium* → el que une todo: le enseña a Claude el paso a paso completo
+
+*Cómo se instala (2 minutos):*
+1. Abrí Claude Code (la app de escritorio de Claude, pestaña *Code*)
+2. Pegale esto tal cual:
+
+Instalá el kit de diseño web de este repo: https://github.com/pasu1049-hash/kit-diseno-web-claude . Cloná el repo y corré el instalador.
+
+3. Cuando termine, cerrá y volvé a abrir Claude.
+
+*Para arrancar:*
+Primero decile: "Completá mi MARCA.md del skill web-premium" (te pregunta nombre, colores, tono, etc.)
+Después: "Haceme la página web de mi marca, que se vea de lujo."
+
+💡 Si tenés fotos y videos tuyos, mejor: salen más reales y no pagás nada extra. Generar imágenes con IA es opcional (usa kie.ai, que se paga aparte).
+
+Cualquier cosa me escribís. ¡Éxitos! 💪
