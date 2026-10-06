@@ -44,6 +44,18 @@ try {
         Copiar-Skill (Join-Path $tmp "a-bunch-of-skills\.claude\skills\$s") $s
     }
     Copiar-Skill (Join-Path $tmp "AIS-OS\.claude\skills\grill-me") "grill-me"
+
+    # visualizations e infographic-builder traen sus scripts aparte en el repo:
+    # se copian adentro del skill y se ajustan las rutas para que anden en cualquier proyecto.
+    foreach ($s in @("visualizations", "infographic-builder")) {
+        Copy-Item -Recurse -Force (Join-Path $tmp "a-bunch-of-skills\scripts\$s") (Join-Path $skills "$s\scripts")
+    }
+    $f = Join-Path $skills "visualizations\SKILL.md"
+    [IO.File]::WriteAllText($f, [IO.File]::ReadAllText($f).Replace("node scripts/visualizations/", "node ~/.claude/skills/visualizations/scripts/"))
+    $f = Join-Path $skills "infographic-builder\SKILL.md"
+    [IO.File]::WriteAllText($f, [IO.File]::ReadAllText($f).Replace("python scripts/infographic-builder/", "python ~/.claude/skills/infographic-builder/scripts/"))
+    $f = Join-Path $skills "visualizations\scripts\generate-visual.js"
+    [IO.File]::WriteAllText($f, [IO.File]::ReadAllText($f).Replace('const envPath = path.resolve(__dirname, "../../.env");', 'const envPath = fs.existsSync(path.resolve(process.cwd(), ".env")) ? path.resolve(process.cwd(), ".env") : path.resolve(__dirname, "../../.env");'))
 }
 finally {
     Remove-Item -Recurse -Force $tmp -ErrorAction SilentlyContinue

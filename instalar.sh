@@ -29,6 +29,15 @@ for s in visualizations infographic-builder skill-builder; do
 done
 copiar "$TMP/AIS-OS/.claude/skills/grill-me" grill-me
 
+# visualizations e infographic-builder traen sus scripts aparte en el repo:
+# se copian adentro del skill y se ajustan las rutas para que anden en cualquier proyecto.
+for s in visualizations infographic-builder; do
+  cp -R "$TMP/a-bunch-of-skills/scripts/$s" "$SKILLS/$s/scripts"
+done
+perl -pi -e 's#node scripts/visualizations/#node ~/.claude/skills/visualizations/scripts/#g' "$SKILLS/visualizations/SKILL.md"
+perl -pi -e 's#python scripts/infographic-builder/#python ~/.claude/skills/infographic-builder/scripts/#g' "$SKILLS/infographic-builder/SKILL.md"
+perl -pi -e 's#const envPath = path\.resolve\(__dirname, "\.\./\.\./\.env"\);#const envPath = fs.existsSync(path.resolve(process.cwd(), ".env")) ? path.resolve(process.cwd(), ".env") : path.resolve(__dirname, "../../.env");#' "$SKILLS/visualizations/scripts/generate-visual.js"
+
 echo "== 3/4 Skills oficiales de HyperFrames (videos y motion para la web) =="
 npx -y skills add heygen-com/hyperframes -g -a claude-code -s '*' -y --copy
 
