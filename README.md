@@ -24,7 +24,7 @@ El instalador baja cada skill desde su repo oficial, así siempre tenés la últ
 ### Opción fácil: que Claude lo instale
 En Claude Code (app de escritorio, pestaña **Code**, o terminal), pegá:
 
-> Instalá el kit de diseño web de esta carpeta (o de este repo). Corré el instalador.
+> Instalá el kit de diseño web de este repo: **https://github.com/pasu1049-hash/kit-diseno-web-claude**. Cloná el repo y corré el instalador.
 
 ### Opción manual
 1. Tener instalado: **Git, Node.js 22+ y FFmpeg** (Python solo si vas a usar infografías con logo).
