@@ -13,7 +13,7 @@ Los skills que usa **Matías "Pasu" Pasutti / 1% Fitness** para que Claude arme 
 | **visualizations** | Diagramas y explicaciones estilo dibujado a mano, en PNG. | [nateherkai/a-bunch-of-skills](https://github.com/nateherkai/a-bunch-of-skills) |
 | **infographic-builder** | Infografías con tu marca y tu logo, en PNG. | [nateherkai/a-bunch-of-skills](https://github.com/nateherkai/a-bunch-of-skills) |
 | **skill-builder** | Para convertir tu propio proceso en un skill nuevo cuando lo repetís. | [nateherkai/a-bunch-of-skills](https://github.com/nateherkai/a-bunch-of-skills) |
-| **HyperFrames** (`hyperframes`, `-core`, `-animation`, `-creative`, `-keyframes`, `-cli`, `-registry`, `media-use`) | Videos para la web hechos con HTML: loop del hero, intros, títulos animados, demos. `media-use` consigue íconos, logos, música e imágenes. | Oficial de HeyGen, [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) (Apache 2.0) |
+| **HyperFrames** (todos los skills oficiales: `hyperframes`, `-core`, `-animation`, `-creative`, `-keyframes`, `-audio`, `-cli`, `-registry`, `-studio`, `media-use`, `motion-graphics`, `product-launch-video`…) | Videos para la web hechos con HTML: loop del hero, intros, títulos animados, demos. `media-use` consigue íconos, logos, música e imágenes. | Oficial de HeyGen, [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) (Apache 2.0) |
 
 El instalador baja cada skill desde su repo oficial, así siempre tenés la última versión.
 
